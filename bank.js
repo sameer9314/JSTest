@@ -3,7 +3,7 @@ var bankAccount = function BankAccount(accountHolder, accountNumber, accountBala
     this.accountHolder = accountHolder,
     this.accountNumber = accountNumber,
     this.accountBalance = accountBalance
-    this.withdraw = function withdraw() { }
+    this.withdraw = function withdraw(withdrawAmount) { }
     this.deposit = function (depositAmount) {
   
         console.log("Amount Credited To Account : " + depositAmount);
