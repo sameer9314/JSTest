@@ -1,4 +1,3 @@
-//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 var bankAccount = function BankAccount(accountHolder, accountNumber, accountBalance) {
     this.name="aaaaa";
     this.accountHolder = accountHolder,
