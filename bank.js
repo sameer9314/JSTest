@@ -1,5 +1,6 @@
+//aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 var bankAccount = function BankAccount(accountHolder, accountNumber, accountBalance) {
-  
+    this.name="aaaaa";
     this.accountHolder = accountHolder,
     this.accountNumber = accountNumber,
     this.accountBalance = accountBalance
@@ -12,10 +13,10 @@ var bankAccount = function BankAccount(accountHolder, accountNumber, accountBala
     }
 };
 
-var creditAccount = Object.create(new bankAccount("Sameer Saurabh", "0001", 10000));
+var creditAccount = new bankAccount("Sameer Saurabh", "0001", 10000);
 
 creditAccount.withdraw = function (withdrawAmount) {
-
+console.log("name : "+creditAccount.name);
     var odlimit = 1000;
 
     if (withdrawAmount <= creditAccount.accountBalance + odlimit) {
@@ -60,5 +61,7 @@ function transaction() {
     creditAccount.withdraw(12000);
 
     creditAccount.withdraw(100);
+
+    console.log();
 }
 
